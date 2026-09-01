@@ -1,0 +1,26 @@
+name: Validate portfolio site
+
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Build the Jekyll site
+        run: bundle exec jekyll build --trace

@@ -7,3 +7,96 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.portfolio-hero {
+  margin: 1rem 0 4rem;
+  padding: 3rem;
+  background: linear-gradient(135deg, #eaf3fa 0%, #f7fafc 100%);
+  border-left: 5px solid #1f5a7a;
+}
+
+.portfolio-hero h1 {
+  max-width: 15ch;
+  margin: 0.3rem 0 1rem;
+  color: #17324d;
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  line-height: 1.05;
+}
+
+.portfolio-eyebrow {
+  margin-bottom: 0.6rem;
+  color: #1f5a7a;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.portfolio-lede {
+  max-width: 52rem;
+  font-size: 1.12rem;
+  line-height: 1.7;
+}
+
+.portfolio-actions {
+  margin-top: 1.8rem;
+}
+
+.portfolio-section {
+  margin: 3.5rem 0;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1rem;
+}
+
+.portfolio-card {
+  padding: 1.4rem;
+  background: #fff;
+  border: 1px solid #d9e3ea;
+  box-shadow: 0 8px 20px rgba(23, 50, 77, 0.06);
+}
+
+.portfolio-card h2 {
+  margin-top: 0;
+  color: #17324d;
+  font-size: 1.2rem;
+}
+
+.portfolio-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.portfolio-list a {
+  display: grid;
+  gap: 0.25rem;
+  padding: 1rem 1.15rem;
+  color: #17324d;
+  background: #f8fbfd;
+  border: 1px solid #d9e3ea;
+  text-decoration: none;
+}
+
+.portfolio-list a:hover,
+.portfolio-list a:focus {
+  background: #eaf3fa;
+  border-color: #1f5a7a;
+}
+
+.portfolio-list span {
+  color: #516573;
+}
+
+.portfolio-note,
+.portfolio-contact {
+  padding-top: 1.5rem;
+  border-top: 1px solid #d9e3ea;
+}
+
+@media (max-width: 37.5em) {
+  .portfolio-hero {
+    padding: 1.8rem 1.25rem;
+  }
+}
