@@ -1,4 +1,99 @@
----
-layout: home
-author_profile: true
----
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Andrew Shin — research in MVDC distribution systems, techno-economic planning, and power-system computation.">
+    <meta name="theme-color" content="#102a43">
+    <title>Andrew Shin | Power Systems Research</title>
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Andrew Shin home">AS</a>
+      <nav aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#software">Software</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <p class="eyebrow">Power systems research</p>
+        <h1>Andrew Shin</h1>
+        <p class="lede">I study how medium-voltage DC distribution systems can be planned and operated reliably as power networks absorb more renewable energy and electric vehicles.</p>
+        <div class="hero-links">
+          <a class="button" href="#research">Current work</a>
+          <a class="text-link" href="https://github.com/bibletellsmeso">GitHub <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="https://orcid.org/0009-0009-6059-2857">ORCID <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="section" id="research" aria-labelledby="research-title">
+        <div class="section-heading">
+          <p class="eyebrow">Research</p>
+          <h2 id="research-title">Current focus</h2>
+        </div>
+        <div class="research-grid">
+          <article>
+            <h3>MVDC distribution systems</h3>
+            <p>Planning distribution networks around medium-voltage DC architecture and understanding the trade-offs in reliability, protection, and conversion equipment.</p>
+          </article>
+          <article>
+            <h3>Techno-economic evaluation</h3>
+            <p>Comparing investment and operating scenarios so engineering decisions remain grounded in lifetime system value.</p>
+          </article>
+          <article>
+            <h3>Power-system computation</h3>
+            <p>Building transparent analysis workflows for power flow, generation modelling, and optimisation-based planning.</p>
+          </article>
+        </div>
+        <p class="note">Active MVDC research materials are maintained in a private, version-controlled research workspace.</p>
+      </section>
+
+      <section class="section section-tint" id="software" aria-labelledby="software-title">
+        <div class="section-heading">
+          <p class="eyebrow">Open software</p>
+          <h2 id="software-title">Selected computational work</h2>
+        </div>
+        <div class="project-list">
+          <a class="project" href="https://github.com/bibletellsmeso/Backward-forward-sweep">
+            <span class="project-number">01</span>
+            <span><strong>Backward–forward sweep</strong><small>Distribution-system power flow implementation</small></span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="project" href="https://github.com/bibletellsmeso/Newton-Raphson-power-flow">
+            <span class="project-number">02</span>
+            <span><strong>Newton–Raphson power flow</strong><small>AC power-flow analysis and visualisation</small></span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="project" href="https://github.com/bibletellsmeso/Unit-commitment">
+            <span class="project-number">03</span>
+            <span><strong>Unit commitment</strong><small>Generation scheduling model</small></span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="project" href="https://github.com/bibletellsmeso/PV-generation-calculation">
+            <span class="project-number">04</span>
+            <span><strong>PV generation calculation</strong><small>Photovoltaic generation analysis</small></span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Let’s discuss power-system research.</h2>
+        <p><a href="mailto:bibleshin@keri.re.kr">bibleshin@keri.re.kr</a></p>
+        <p><a href="mailto:bibleshin@gm.gist.ac.kr">bibleshin@gm.gist.ac.kr</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> Andrew Shin</span>
+      <a href="https://github.com/bibletellsmeso">GitHub</a>
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>
